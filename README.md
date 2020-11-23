@@ -19,7 +19,6 @@ Functionality (75 points)
 10 Users can filter games by category
 10 Logged in users favorite games
 10 Logged in users can filter by favorited games
-10 Logged in users can add games to the list
 5 Users can change the design theme of the website from light side to dark side
 
 Best Practices (5 points)
