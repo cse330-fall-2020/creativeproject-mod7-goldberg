@@ -1,25 +1,11 @@
-'use strict';
+const express = require('express')
+const app = express()
+const port = 3000
 
-const e = React.createElement;
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
-
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
-}
-
-const domContainer = document.querySelector('#main');
-ReactDOM.render(e(LikeButton), domContainer);
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
