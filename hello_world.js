@@ -1,6 +1,6 @@
 const http = require("http"),
     fs = require("fs"); //file server
-const express = require('express')
+const express = require('express');
 const app = express();
 const port = 3456;
 /*const file = "client.html";
@@ -10,7 +10,7 @@ const cssfile = "client.css";
     res.send('Hello World!');
 })*/
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
     res.send('Hello World!')
 })
 
