@@ -34,10 +34,9 @@ app.get('/', (req, res) => {
 
             // send records as a response
             res.send(
-                'Hello World!',
+                'Hello Wrold!',
                 recordset
             );
-            
         });
     });
 
