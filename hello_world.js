@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     var sql = require("mssql");
     var config = {
         user: 'carrotmanXVI',
-        password: 'doINeedThisToBeRight',
+        password: 'a4848441662',
         server: 'ec2-100-26-241-58.compute-1.amazonaws.com',
         database: 'GamesDB'
     };
