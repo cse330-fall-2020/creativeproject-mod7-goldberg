@@ -1,0 +1,30 @@
+{
+  "name": "creativeproject-mod7-goldberg",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "mssql": "^6.2.3"
+  },
+  "description": "466607",
+  "main": "(hello_world.js)",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cse330-fall-2020/creativeproject-mod7-goldberg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cse330-fall-2020/creativeproject-mod7-goldberg/issues"
+  },
+  "homepage": "https://github.com/cse330-fall-2020/creativeproject-mod7-goldberg#readme"
+}
