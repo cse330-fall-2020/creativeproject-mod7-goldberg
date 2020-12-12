@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
         // query to the database and get the records
         request.query('select * from test', function (err, recordset) {
             
-            if (err) console.log(err)
+            if (err) console.log(err);
 
             // send records as a response
             res.send(recordset);
@@ -38,9 +38,9 @@ app.get('/', (req, res) => {
         });
     });
 
-    res.send('Hello World!')
+    res.send('Hello World!');
 })
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`hello_world listening at http://localhost:${port}`);
 })
