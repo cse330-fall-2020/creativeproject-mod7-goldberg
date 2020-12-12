@@ -10,7 +10,34 @@ const cssfile = "client.css";
     res.send('Hello World!');
 })*/
 
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
+    var sql = require("mssql");
+    var config = {
+        user: 'carrotmanXVI',
+        password: 'doINeedThisToBeRight',
+        server: 'ec2-100-26-241-58.compute-1.amazonaws.com',
+        database: 'GamesDB'
+    };
+
+    // connect to your database
+    sql.connect(config, function (err) {
+    
+        if (err) console.log(err);
+
+        // create Request object
+        var request = new sql.Request();
+           
+        // query to the database and get the records
+        request.query('select * from test', function (err, recordset) {
+            
+            if (err) console.log(err)
+
+            // send records as a response
+            res.send(recordset);
+            
+        });
+    });
+
     res.send('Hello World!')
 })
 
