@@ -1,0 +1,9 @@
+database: GamesDB
+
+create table test (
+    id mediumint unsigned not null auto_increment,
+    name varchar(50) not null,
+    height tinyint unsigned,
+    width tinyint unsigned,
+    primary key (id)
+) engine = InnoDB;
