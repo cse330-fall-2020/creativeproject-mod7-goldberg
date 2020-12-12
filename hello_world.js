@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-const express = require('express')
-const app = express()
-const port = 3456
-=======
 const http = require("http"),
     fs = require("fs"); //file server
 const express = require('express');
@@ -14,7 +9,6 @@ const cssfile = "client.css";
 /*const server = http.createServer(function (req, res) {
     res.send('Hello World!');
 })*/
->>>>>>> d2fef1ac732efb07687f5769da56b0be32f33536
 
 app.get('/', (req, res) => {
     var sql = require("mssql");
@@ -50,10 +44,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-<<<<<<< HEAD
-  console.log(`Example app listening at http://localhost:${port}`)
-})
-=======
     console.log(`hello_world listening at http://localhost:${port}`);
 })
->>>>>>> d2fef1ac732efb07687f5769da56b0be32f33536
